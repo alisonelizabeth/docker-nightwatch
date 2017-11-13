@@ -7,7 +7,7 @@ RUN \
   echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list && \
   apt-get update && \
   apt-get install -y nodejs google-chrome-stable xvfb && \
-  npm install -g nightwatch del && \
+  npm install -g nightwatch && \
   rm -rf /var/lib/apt/lists/*
 
 WORKDIR /tests
